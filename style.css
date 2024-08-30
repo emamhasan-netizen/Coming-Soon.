@@ -1,0 +1,241 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", system-ui;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url('images/Background.jpg') no-repeat ;
+    background-size: cover;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(4, 4, 51, 0.363);
+    box-shadow: rgb(255, 255, 255) 0px 3px 6px, rgb(255, 255, 255) 0px 3px 6px;
+    background-blend-mode: multiply;
+}
+
+.logo a{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff; 
+    text-decoration: none;
+    padding: 10px;
+}
+.logo i{
+    padding: 10px;
+    font-size: 32px;
+}
+
+
+.nav-links {
+    list-style: none;
+    
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(4, 4, 51);
+    font-size: 18px;
+    transition: color 0.3s ease;
+    background: #ffffff;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+    background: rgb(4, 4, 51); 
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background-color: none;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    margin: auto;
+
+}
+
+h1 {
+    color: #ffffff; 
+    margin-bottom: 20px;
+    font-size: 100px;
+    word-spacing: 20px;
+    font-weight: 200;
+    box-shadow: rgb(255, 247, 247) 0px 3px 6px, rgb(255, 255, 255) 0px 3px 6px;
+    background-color: #000000;
+}
+
+.h1{
+    background-color: transparent #f0f0f0;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+}
+
+.box {
+    background-color: #ffffff; 
+    color: rgb(4, 4, 51);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    width: 100px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.label {
+    font-size: 0.7em;
+    margin-top: 5px;
+}
+
+button {
+    background-color: rgb(4, 4, 51); 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: rgb(255, 255, 255) 0px 3px 6px, rgb(255, 255, 255) 0px 3px 6px;
+}
+
+button:hover {
+    color: rgb(4, 4, 51); 
+    background-color: #ffffff;
+    transition: all .4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    box-shadow: rgb(255, 255, 255) 0px 3px 6px, rgb(255, 255, 255) 0px 3px 6px;
+    background: rgba(4, 4, 51, 0.582);
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+ }
+
+.social-media a i {
+    padding: 30px 0px;
+
+}
+
+.social-icon:hover {
+    color: rgb(175, 175, 252);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #countdown {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        font-size: 1.2em;
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+    }
+
+    .label {
+        font-size: 0.6em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    .social-icon {
+        font-size: 1.2em;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    #countdown {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        font-size: 1em;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+    }
+
+    .label {
+        font-size: 0.5em;
+    }
+
+    button {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+
+    .social-icon {
+        font-size: 1em;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links a {
+        font-size: 0.9em;
+    }
+}
