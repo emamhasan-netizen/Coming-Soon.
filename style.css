@@ -109,6 +109,7 @@ h1 {
     align-items: center;
     justify-content: center;
     margin: 5px;
+    box-shadow: rgb(0, 0, 0) 0px 3px 6px, rgb(0, 0, 0) 0px 3px 6px;
 }
 
 .label {
